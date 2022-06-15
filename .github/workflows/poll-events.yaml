@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 16
       - name: Install package
-        run: npm i -g @adguard/github-stats
+        run: npm i -g @adguard/github-stats@1.0.0
       - name: Poll Github events
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
